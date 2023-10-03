@@ -1,0 +1,15 @@
+version: "3.0"
+services:
+  app:
+    container_name: "web-container"
+    build:
+      context: "app"
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./app:/usr/src/app
+      - app-node-modules:/usr/src/app/node_modules
+    ports:
+      - "3000:3000/tcp"
+
+volumes:
+  app-node-modules:
