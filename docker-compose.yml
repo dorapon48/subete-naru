@@ -10,6 +10,17 @@ services:
       - app-node-modules:/usr/src/app/node_modules
     ports:
       - "3000:3000/tcp"
+  back:
+    container_name: "api-container"
+    build:
+      context: "back"
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./back:/usr/src/app
+      - back-node-modules:/usr/src/app/node_modules
+    ports:
+      - "8080:8080/tcp"
 
 volumes:
   app-node-modules:
+  back-node-modules:
