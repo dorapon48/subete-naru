@@ -9,5 +9,10 @@ dockerを先に設定
 dockerfile内でnpm installを使うと遅くなる問題はvolumeを指定することで解決
 node_modulesを保管しておいて読み込むような感じ
 https://qiita.com/keito654/items/035d0547c5ab210cc7ab
-apt-getコマンドを追加しておく
+apt-getコマンドを追加しておくupdateはしておくべき
 https://dev.classmethod.jp/articles/apt-get-magic-spell-in-docker/
+
+サーバ側処理
+npm init...ok
+apiサーバを作る
+とりあえず初期設定的なやつを完了
