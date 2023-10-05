@@ -18,3 +18,12 @@ apiサーバを作る
 とりあえず初期設定的なやつを完了
 dockerfileを設定...ok
 npm startじゃ動かないのね
+
+apiを先に完成させる
+post処理
+postコマンド: curl -X POST -H "Content-Type: application/json" -d '{"test":"test"}' http://localhost:8080/
+受け取りはできた
+
+2023/10/05
+nextとphpをやってみたくなった
+バックエンドをphpにしてみる
